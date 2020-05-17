@@ -5,14 +5,13 @@
 using namespace std;
 
 void menu(){
-
+	
     cout << "*******" << endl;
     cout << "*      MENU     *" << endl;
     cout << "*******" << endl;
     cout << "* 1 |  Executar *" << endl;
     cout << "* 2 |    Sair   *" << endl;
     cout << "*******" << endl;
-
 }
 
 int main(){

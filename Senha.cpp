@@ -5,9 +5,7 @@
 using namespace std;
 
 const string senhaCor = "1234";
-
 string senhaDig; 
-
 
 int main () 
 {   
