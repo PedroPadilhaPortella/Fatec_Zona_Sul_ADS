@@ -14,8 +14,8 @@ void menu(){
 
 int main(void){
 	setlocale(LC_ALL, "Portuguese");
-    int valores [5];
-    int tecla, i;
+    int valores [5], multiplos[5];
+    int tecla, i, j = 0;
     char again;
     
     RETORNO:
@@ -41,10 +41,14 @@ int main(void){
     		cout << "Insira 5 valores diferentes:\n";
     		for(i = 0; i < 5; i++){
     			cin >> valores[i];
+    			if(valores[i] % 2 == 0 && valores[i] % 4 == 0){
+    				multiplos[j] = valores[i];
+    				j++;
+				}
 			}
     		
-    		for(i = 0; i < 5; i++){
-    			cout<<valores[i]<<"\n";
+    		for(i = 0; i < j; i++){
+    			cout<<multiplos[i]<<"\n";
 			}
 			
 			cout<<"Deseja testar novamente? [S/N]\n";
