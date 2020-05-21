@@ -30,11 +30,11 @@ int main(void){
       	      	goto CODE;
       	      	break;
       	  	case 2:
-           	 	exit;
+           	 	goto EXIT;
             	break;
         	default:
             	cout << "Opção inválida!!" << endl << endl;
-            	exit;
+            	goto EXIT;
     	}
     	
     	CODE:
@@ -46,7 +46,7 @@ int main(void){
     				j++;
 				}
 			}
-    		
+    		cout<< "O valores que são multiplos de 2 e 4 simultaneamente são:\n";
     		for(i = 0; i < j; i++){
     			cout<<multiplos[i]<<"\n";
 			}
@@ -58,6 +58,6 @@ int main(void){
 			}else{
 				system("pause");
 			}
-	
-    	return 0;
+		EXIT:
+    		return 0;
 }
