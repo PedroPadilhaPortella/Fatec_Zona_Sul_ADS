@@ -16,6 +16,7 @@ int main(){
 	setlocale(LC_ALL, "Portuguese");
     int valores [5];
     int tecla, i;
+    char again;
     
     RETORNO:
     	system("cls");
@@ -43,13 +44,13 @@ int main(){
 			}
     		
     		for(i = 0; i <= 5; i++){
-    			cout >> valores[i]>>"\n";
+    			cout<<valores[i]<<"\n";
 			}
 			
 			cout<<"Deseja testar novamente? [S/N]\n";
     		cin >> again;
     		if(again == 's' || again == 'S'){
-    			goto END;
+    			goto RETORNO;
 			}else{
 				system("pause");
 			}
