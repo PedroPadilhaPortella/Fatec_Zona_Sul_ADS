@@ -39,11 +39,11 @@ int main(){
     	
     	CODE:
     		cout << "Insira 5 valores diferentes:\n";
-    		for(i = 0; i <= 5; i++){
+    		for(i = 0; i < 5; i++){
     			cin >> valores[i];
 			}
     		
-    		for(i = 0; i <= 5; i++){
+    		for(i = 0; i < 5; i++){
     			cout<<valores[i]<<"\n";
 			}
 			
