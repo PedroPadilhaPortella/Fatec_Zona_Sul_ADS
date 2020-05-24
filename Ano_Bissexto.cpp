@@ -2,9 +2,9 @@
 #include <cstdlib>
 using namespace std;
 void menu(){
-    cout << "*******" << endl;
-    cout << "*      MULTIPLOS DE 2 E 4     *" << endl;
-    cout << "*******" << endl;
+    cout << "************************" << endl;
+    cout << "*      ANO BISSEXTO    *" << endl;
+    cout << "************************" << endl;
     cout << "* 1 |  Executar *" << endl;
     cout << "* 2 |    Sair   *" << endl;
     cout << "*******" << endl;
