@@ -4,9 +4,9 @@ using namespace std;
 
 void menu(){
 	
-    cout << "*******" << endl;
-    cout << "*      MULTIPLOS DE 2 E 4     *" << endl;
-    cout << "*******" << endl;
+    cout << "*************************" << endl;
+    cout << "**   TROCA DE VARIAVEL  *" << endl;
+    cout << "*************************" << endl;
     cout << "* 1 |  Executar *" << endl;
     cout << "* 2 |    Sair   *" << endl;
     cout << "*******" << endl;
