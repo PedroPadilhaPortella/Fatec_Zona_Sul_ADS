@@ -33,7 +33,11 @@ int main(void){
     	CODE:
     		cout << "Descubra se um ANO e ou nao Bissexto:\n Insira um ano aqui: ";
     		cin >> ano;
-    		cout << (ano % 4 == 0)? "Este ano e Bissexto!\n" : "Esse ano nao e Bissexto!\n";
+    		if(ano % 4 == 0){
+    			cout << "Este ano e Bissexto!\n";
+			}else{
+				cout << "Esse ano nao e Bissexto!\n";
+			}
     		
 			cout<<"Deseja testar novamente? [S/N]\n";
     		cin >> again;
