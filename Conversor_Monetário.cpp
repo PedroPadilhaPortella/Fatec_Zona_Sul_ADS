@@ -6,7 +6,7 @@
 using namespace std;
 
 void menu(){
-
+	system("cls");
     cout << "********************************" << endl;
     cout << "*      CONVERSOR MONETARIO     *" << endl;
     cout << "********************************" << endl;
@@ -24,10 +24,9 @@ double ConverterValorMonetario(double cotacaoMoeda, double valorMoeda){
 
 int main() {
   setlocale(LC_ALL, "Portuguese");
-  system("cls");
-  double cotacaoBase, valorASerConvertido;
-  int tecla;
-  char option [], moeda01 [], moeda02 [];
+  double cotacaoBase, valorASerConvertido, valorConvertido;
+  int tecla, option;
+  char moeda01 [8], moeda02 [8];
 
   MENU:
   menu();
@@ -48,43 +47,37 @@ int main() {
   }
 
   A:
-  	cout << "| DOLAR -> REAL | [DR]\n | EURO -> REAL |[ER]\n| REAL -> DOLAR |[RD]\n| REAL -> EURO |[RE]\n|DOLAR -> EURO |[DE]\n| EURO -> DOLAR |[ED]";
-  	cout << "\n \nConversions Values based on may/30/2020"
+  	cout << "| DOLAR -> REAL | [1]\n | EURO -> REAL |[2]\n| REAL -> DOLAR |[3]\n| REAL -> EURO |[4]\n|DOLAR -> EURO |[5]\n| EURO -> DOLAR |[6]";
+  	cout << "\n \nConversions Values based on may/30/2020";
   	cout << "Escolha uma Conversão Monetária: ";
   	cin >> option;
   	cout << "Digite o Valor Monetario a Ser Convertida: $ ";
   	cin >> valorASerConvertido;
   	
   	switch (option) {
-  		case 'DR':
+  		case 1:
   			cotacaoBase = 0.19;
-  			valorConvertido = ConverterValorMonetario(, valorASerConvertido);
   			break;
-  		case 'ER':
+  		case 2:
   			cotacaoBase = 0.17;
-  			valorConvertido = ConverterValorMonetario(, valorASerConvertido);
   			break;
-  		case 'RD':
+  		case 3:
   			cotacaoBase = 5.33;
-  			valorConvertido = ConverterValorMonetario(, valorASerConvertido);
   			break;
-		case 'RE':
+		case 4:
 			cotacaoBase = 5.92;
-  			valorConvertido = ConverterValorMonetario(, valorASerConvertido);
   			break;
-		case 'DE':
+		case 5:
 			cotacaoBase = 0.9;
-  			valorConvertido = ConverterValorMonetario(, valorASerConvertido);
   			break;
-		case 'ED':
+		case 6:
 			cotacaoBase = 1.11;
-  			valorConvertido = ConverterValorMonetario(, valorASerConvertido);
   			break;
   		default:
   			cout << "Conversão Inváilda, Por favor insira uma conversão Válida!!";
-	  }
-	  
-	  cout << endl << "$" << valorASerConvertido << " em "<< moeda01 <<" vale R$" << valorConvertido << moeda02 << endl  << endl;
+	}
+	valorConvertido = ConverterValorMonetario(cotacaoBase, valorASerConvertido);
+	cout << endl << "$" << valorASerConvertido << " em "<< moeda01 <<" vale R$" << valorConvertido << moeda02 << endl  << endl;
 
   goto MENU;
 
