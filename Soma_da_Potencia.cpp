@@ -13,7 +13,7 @@ int calcularSomaDaPotencia (int valor1, int valor2, int valor3){
 int main() {
   setlocale(LC_ALL, "Portuguese");
   int firstValue, secondValue, thirdValue, result;
-  cout << "AVISO : Insira apenas valores Inteiros!!";
+  cout << "AVISO : Insira apenas valores Inteiros!!\n\n";
   cout << "Digite o primeiro valor: ";
   cin >> firstValue;
   cout << "Digite o segundo valor: ";
