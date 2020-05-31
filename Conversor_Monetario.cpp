@@ -49,7 +49,7 @@ int main() {
 		}
 
   	A:
-  		cout << "| DOLAR -> REAL |[1]\n| EURO -> REAL |[2]\n| REAL -> DOLAR |[3]\n| REAL -> EURO  |[4]\n| DOLAR -> EURO |[5]\n| EURO -> DOLAR |[6]";
+  		cout << "| DOLAR -> REAL |[1]\n| EURO -> REAL  |[2]\n| REAL -> DOLAR |[3]\n| REAL -> EURO  |[4]\n| DOLAR -> EURO |[5]\n| EURO -> DOLAR |[6]";
   		cout << "\n \nConversions Values based on may/30/2020\n\n";
   		cout << "Escolha uma Conversão Monetária: ";
   		cin >> option;
