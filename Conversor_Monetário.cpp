@@ -26,7 +26,7 @@ int main() {
 	setlocale(LC_ALL, "Portuguese");
 	double cotacaoBase, valorASerConvertido, valorConvertido;
 	int tecla, option;
-	char moeda01[8], moeda02[8];
+	char moeda01[8], moeda02[8], again;
 
   	MENU:
   		system("cls");
@@ -49,10 +49,10 @@ int main() {
 
   	A:
   		cout << "| DOLAR -> REAL | [1]\n | EURO -> REAL |[2]\n| REAL -> DOLAR |[3]\n| REAL -> EURO |[4]\n|DOLAR -> EURO |[5]\n| EURO -> DOLAR |[6]";
-  		cout << "\n \nConversions Values based on may/30/2020";
+  		cout << "\n \nConversions Values based on may/30/2020\n\n\n";
   		cout << "Escolha uma Conversão Monetária: ";
   		cin >> option;
-  		cout << "Digite o Valor Monetario a Ser Convertida: $ ";
+  		cout << "Digite o Valor Monetario a Ser Convertida: $ \n\n";
   		cin >> valorASerConvertido;
   	
   		switch (option) {
@@ -91,9 +91,15 @@ int main() {
 		}	
 		valorConvertido = ConverterValorMonetario(cotacaoBase, valorASerConvertido);
 		cout << endl << "$" << valorASerConvertido << " em "<< moeda01 <<" vale R$ " << valorConvertido << " em "<< moeda02 << endl  << endl;
-
-	goto MENU;
-	OUT:
+		
+		cout<<"\n\nDeseja testar novamente? [S/N]\n";
+    	cin >> again;
+    	if(again == 's' || again == 'S'){
+    		goto MENU;
+		}else{
+			system("pause");
+		}
+		OUT:
 	return 0;
 }
 
