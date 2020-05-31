@@ -7,12 +7,12 @@
 using namespace std;
 
 void menu(){
-    cout << "********************************" << endl;
-    cout << "*      CONVERSOR MONETARIO     *" << endl;
-    cout << "********************************" << endl;
-    cout << "********** 1 |  Executar *******" << endl;
-    cout << "******** 2 |    Sair   *********" << endl;
-    cout << "********************************" << endl;
+    cout << "*****************************" << endl;
+    cout << "*   CONVERSOR MONETARIO     *" << endl;
+    cout << "*****************************" << endl;
+    cout << "******* 1 |  Executar *******" << endl;
+    cout << "******* 2 |    Sair   *******" << endl;
+    cout << "*****************************" << endl;
 
 }
 
@@ -27,7 +27,7 @@ int main() {
 	double cotacaoBase, valorASerConvertido, valorConvertido;
 	int tecla, option;
 	char moeda01[8], moeda02[8], again;
-
+	
   	MENU:
   		system("cls");
   		menu();
@@ -44,35 +44,36 @@ int main() {
         		break;
     		default:
     			cout << "Opção inválida!!" << endl << endl;
+    			system("pause");
         		goto MENU;
 		}
 
   	A:
-  		cout << "| DOLAR -> REAL | [1]\n | EURO -> REAL |[2]\n| REAL -> DOLAR |[3]\n| REAL -> EURO |[4]\n|DOLAR -> EURO |[5]\n| EURO -> DOLAR |[6]";
-  		cout << "\n \nConversions Values based on may/30/2020\n\n\n";
+  		cout << "| DOLAR -> REAL |[1]\n| EURO -> REAL |[2]\n| REAL -> DOLAR |[3]\n| REAL -> EURO  |[4]\n| DOLAR -> EURO |[5]\n| EURO -> DOLAR |[6]";
+  		cout << "\n \nConversions Values based on may/30/2020\n\n";
   		cout << "Escolha uma Conversão Monetária: ";
   		cin >> option;
-  		cout << "Digite o Valor Monetario a Ser Convertida: $ \n\n";
+  		cout << "\nDigite o Valor Monetario a Ser Convertida: $";
   		cin >> valorASerConvertido;
   	
   		switch (option) {
   			case 1:
-  				cotacaoBase = 0.19;
+  				cotacaoBase = 5.33;
   				strcpy( moeda01, "dolar");
   				strcpy( moeda02, "real");
   				break;
   			case 2:
-  				cotacaoBase = 0.17;
+  				cotacaoBase = 5.92;
   				strcpy( moeda01, "euro");
   				strcpy( moeda02, "real");
   				break;
   			case 3:
-  				cotacaoBase = 5.33;
+  				cotacaoBase = 0.19;
   				strcpy( moeda01, "real");
   				strcpy( moeda02, "dolar");
   				break;
 			case 4:
-				cotacaoBase = 5.92;
+				cotacaoBase = 0.17;
 				strcpy( moeda01, "real");
   				strcpy( moeda02, "euro");
 				  break;
@@ -87,7 +88,7 @@ int main() {
   				strcpy( moeda02, "dolar");
   				break;
   			default:
-  				cout << "Conversão Inváilda, Por favor insira uma conversão Válida!!";
+  				cout << "\nConversão Inválida, Por favor insira uma conversão Válida!!\n";
 		}	
 		valorConvertido = ConverterValorMonetario(cotacaoBase, valorASerConvertido);
 		cout << endl << "$" << valorASerConvertido << " em "<< moeda01 <<" vale R$ " << valorConvertido << " em "<< moeda02 << endl  << endl;
@@ -102,5 +103,3 @@ int main() {
 		OUT:
 	return 0;
 }
-
-
