@@ -73,7 +73,7 @@ int main() {
 
 OUT:
   cout << endl;
-  system("cls");
+  cout << "Me deixa triste que voce ira embora\nAdeus...\n"
   return 0;
 }
 
