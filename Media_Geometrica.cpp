@@ -58,7 +58,7 @@ int main() {
           break;
       case 3:
           ExibirResultado();
-          system("cls"):
+          system("cls");
           goto MENU;
           break;
       case 4:
