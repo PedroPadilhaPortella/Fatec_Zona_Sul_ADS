@@ -66,6 +66,8 @@ int main() {
           break;
       default:
           cout << "Opção inválida!!" << endl << endl;
+          system("pause");
+          system("cls");
           goto MENU;
   }
 
@@ -112,5 +114,6 @@ void ExibirResultado()  {
   cout << endl << "Segundo valor: " << valor02;
   cout << endl << "Terceiro valor:" << valor03 << endl;
   cout << endl << "média Geométrica " << setprecision(4) << resultado << endl  << endl;
+  cout << "Se desejar fazer uma nova consulta, pressione 1\n\n";
   system("pause");
   }  
