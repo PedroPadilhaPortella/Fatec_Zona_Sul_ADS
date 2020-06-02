@@ -19,7 +19,7 @@ double lerPrimeiroValor();
 double lerSegundoValor();
 double lerTerceiroValor();
 double CalcularMedia(double n1, double n2, double n3);
-void ExibirTudo();
+void ExibirResultado();
 
 void MenuDeControle(){
     cout << " " << setfill('=') << setw(27) <<  " " << endl;
@@ -57,8 +57,8 @@ int main() {
           goto MENU;
           break;
       case 3:
-          ExibirTudo();
-          getchar();
+          ExibirResultado();
+          system("cls"):
           goto MENU;
           break;
       case 4:
@@ -101,17 +101,16 @@ double c;
 double CalcularMedia(double n1, double n2, double n3){
   double result;
   result = cbrt((n1 * n2 * n3));
-  return result;
   cout << "Média Geométrica Calculada Com Sucesso!!"<<endl;
-  getchar();
+  system("pause");
+  return result;
 }
 
 //Função void para exibir tudo na tela
-void ExibirTudo()  {
+void ExibirResultado()  {
   cout << endl << "Primeiro valor: " << valor01;
   cout << endl << "Segundo valor: " << valor02;
   cout << endl << "Terceiro valor:" << valor03 << endl;
   cout << endl << "média Geométrica " << setprecision(4) << resultado << endl  << endl;
-  cout << "Press [ENTER] to go to MENU!";
-  getchar();
+  system("pause");
   }  
