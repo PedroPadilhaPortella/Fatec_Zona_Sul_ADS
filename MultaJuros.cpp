@@ -19,7 +19,7 @@ int main ( ) {
 
   while (tecla != 4) {
     system("cls");
-    cout << "\n=========Multa a Juros Simples===============\nInserir Valores da prestacao\nCalcular Multa\nExibir Valores\nSair\n__";
+    cout << "\n=========Multa a Juros Simples===============\n1)Inserir Valores da prestacao\n2)Calcular Multa\n3)Exibir Valores\n4)Sair\n__";
     cin >> tecla;
 
     if (tecla == 1 ){
@@ -75,7 +75,7 @@ double setValueToPay(double valor, double multa, double juros) {
   return total;
 }
     
-void exibir (double valor, double dias, double multa, double juros, double vlpagar ) {
+void show(double valor, double dias, double multa, double juros, double vlpagar ) {
     system("cls");    
     cout << "\nValor da Prestação: " << setfill(' ') << setw(9)<< valor;
     cout << "\nQuantidade de dias: " << setfill(' ') << setw(11) << dias;
