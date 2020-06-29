@@ -16,7 +16,7 @@ int main(void){
     RETORNO:
     	system("cls");
     	    	menu();
-    	cout << "Digite a opção desejada: ";
+    	cout << "Digite a opÃ§Ã£o desejada: ";
     	cin >> tecla;
     	switch (tecla){
      	   	case 1:
@@ -27,7 +27,7 @@ int main(void){
            	 	goto EXIT;
             	break;
         	default:
-            	cout << "Opção inválida!!" << endl << endl;
+            	cout << "Opï¿½ï¿½o invï¿½lida!!" << endl << endl;
             	goto EXIT;
     	}
     	CODE:
