@@ -5,12 +5,8 @@ using namespace std;
 double cont = 0, salario, salariomaior, salariomenor; 
 double media = 0, saldo = 0;
 
-
 void salarios();
-
 void mostrar();
-
-
 
 int main() 
 { 
@@ -20,7 +16,7 @@ int main()
 
     while ( tecla != 3 )
     { 
-      system("clear");
+      system("cls");
       
       cout << "\n**menu**\n1 Ler\n2 Mostrar\n3 sair\nitem:";
       cin >> tecla;
@@ -37,36 +33,34 @@ int main()
                 exit(0); 
                 break;
       } 
-    }
-             
+    }         
 }
 
 void salarios ()  
 {
- cout << "\nSalário " << cont+1 << ":";
- cin >> salario;  
- cont ++;  // cont = cont + 1
+	cout << "\nSalário " << cont + 1 << ":";
+	cin >> salario;  
+	cont ++;  // cont = cont + 1
 
- saldo += salario; // somatório dos salarios
- media = saldo / cont;
+	saldo += salario; // somatório dos salarios
+	media = saldo / cont;
  
-  if ( cont == 1 )
-   { 
+	if ( cont == 1 ){ 
      salariomenor = salario;  
      salariomaior = salario; 
     }
  
-  if ( salario < salariomenor ) 
-          salariomenor = salario;
+	if ( salario < salariomenor ) 
+        salariomenor = salario;
  
-  if ( salario > salariomaior )  
-          salariomaior = salario;
+	if ( salario > salariomaior )  
+        salariomaior = salario;
 }
 
 
 void mostrar() 
 {
- cout << "\nSalário Menor:" << salariomenor << " | Salário Maior:" << salariomaior << "   Média:" << media << " Saldo :"<< saldo; 
- system("Sleep 2");
+ cout << "\nSalário Menor:" << salariomenor << " |\nSalário Maior:" << salariomaior << "\n|Média:" << media << "|\nSaldo :"<< saldo << endl; 
+ system("pause");
  
 }
