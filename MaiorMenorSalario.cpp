@@ -2,8 +2,8 @@
 #include "string.h"
 using namespace std;
 
-double cont = 0, salario, salariomaiorM, salariomenorM, salariomaiorF, salariomenorF; 
-double media = 0, saldo = 0;
+double saldo, salario, salariomaiorM, salariomenorM, salariomaiorF, salariomenorF; 
+double mediaM = 0, mediaF = 0, saldoM = 0, saldoF = 0, contM = 0, contF = 0, cont = 0;
 char sexo;
 
 void salarios();
@@ -49,21 +49,22 @@ void salarios ()
 	cout << "\nSexo [M/F]: ";
 	cin >> sexo;
 	
-
-	saldo += salario; // somatório dos salarios
-	media = saldo / cont;
-	
  	if(sexo == 'M' || sexo == 'm'){
 		salarioMasc();
 	}else if(sexo == 'F' || sexo == 'f'){
 		salarioFemin();
 	}else{
-		cout << "\nSexo Inválido!";
+		cout << "\n\nSexo Inválido! Por favor, Insira o Sexo novamente!";
+		system("pause");
+		system("cls");
 		goto Sexo;
 	}
 }
 
 void salarioMasc(){
+	saldoM += salario;
+	contM ++;
+	mediaM =  saldoM / contM; 
 	if ( cont == 1 ){ 
      salariomenorM = salario;  
      salariomaiorM = salario; 
@@ -77,6 +78,9 @@ void salarioMasc(){
 }
 
 void salarioFemin(){
+	saldoF += salario;
+	contF ++;
+	mediaF = saldoF / contF;
 	if ( cont == 1 ){ 
      salariomenorF = salario;  
      salariomaiorF = salario; 
@@ -90,9 +94,9 @@ void salarioFemin(){
 }
 void mostrar() 
 {
- cout << "\n|MASCULINO|\n|Maior Salario:" << salariomaiorM << " \n|Menor Salario:" << salariomenorM << "\n|Média:" << media << endl;
+ cout << "\n|MASCULINO|\n|Maior Salario:" << salariomaiorM << " \n|Menor Salario:" << salariomenorM << "\n|Média:" << mediaM << endl;
  cout << "#################";
- cout << "\n|FEMININO|\n|Maior Salario:" << salariomaiorF << " \n|Menor Salário:" << salariomenorF << "\n|Média:" << media <<  endl;
- cout << "---------------\nSaldo:" << saldo << endl;
+ cout << "\n|FEMININO|\n|Maior Salario:" << salariomaiorF << " \n|Menor Salário:" << salariomenorF << "\n|Média:" << mediaF <<  endl;
+ cout << "---------------\nSaldo Masculino:" << saldoM << "\nSaldo Feminino:" << saldoF << endl;
  system("pause");
 }
