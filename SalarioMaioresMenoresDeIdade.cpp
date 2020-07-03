@@ -4,7 +4,7 @@ using namespace std;
 
 double saldo, salario1, salario2, salariomaior1, salariomenor1, salariomaior2, salariomenor2; 
 double saldo2 = 0, saldo1 = 0, cont1 = 0, cont2 = 0;
-char idade;
+int idade;
 
 void salarios();
 void mostrar();
@@ -45,7 +45,7 @@ void salarios ()
 	cout << "\nIdade: ";
 	cin >> idade;
 	
- 	if(idade < 18 && idade <= 12){
+ 	if(idade < 18 && idade >= 10){
 		salarioMenores();
 	}else if(idade >= 18){
 		salarioMaiores();
