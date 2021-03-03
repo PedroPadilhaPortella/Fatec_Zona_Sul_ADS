@@ -1,4 +1,5 @@
 import javax.swing.JOptionPane;
+
 public class ex02
 {
     static long fibo(int n){
@@ -15,15 +16,18 @@ public class ex02
             String msg = " ";
 
             if (valor1 <= 0)
-                throw new Exception("O valor deve ser maior que 0!");
+                throw new PersonalException("O valor deve ser maior que 0!");
 
             for (int i = 0; i < valor1; i++)
                 msg += fibo(i + 1) + " ";
 
           JOptionPane.showMessageDialog(null, "Sequência de Fibonacci até o " + valor1 + "º termo:" + msg);
         }
-        catch (Exception e) {
+        catch (PersonalException e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+        catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Erro, algo não está correto");
         }
     }
 }

@@ -1,7 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class ex03
-{
+public class ex03 {
     public static void main(String[] args) {
 
         try {
@@ -10,14 +9,16 @@ public class ex03
             String msg = " ";
 
             if (valorInicial > valorFinal)
-                throw new Exception("O valor inicial deve ser menor que o final.");
-            
+                throw new PersonalException("O valor inicial deve ser menor que o final.");
+
             for (int c = valorInicial; c <= valorFinal; c++) {
-                if (c < 2)    continue;
-                
+                if (c < 2)
+                    continue;
+
                 for (int d = 2; d <= c; d++) {
                     if (c % d == 0) {
-                        if (c == 2)    msg += " " + c;
+                        if (c == 2)
+                            msg += " " + c;
                         break;
                     }
                     if (d == c - 1) {
@@ -28,9 +29,10 @@ public class ex03
             }
 
             JOptionPane.showMessageDialog(null, "Números primos no intervalo informado:" + msg);
-        }
-        catch (Exception e) {
+        } catch (PersonalException e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Erro, algo não está correto");
         }
     }
 }

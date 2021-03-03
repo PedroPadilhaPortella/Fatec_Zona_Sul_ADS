@@ -1,4 +1,5 @@
 import javax.swing.JOptionPane;
+
 public class ex01 {
     public static void main(String[] args) {
 
@@ -8,7 +9,7 @@ public class ex01 {
             String msg = " ";
         
             if(valorInicial > valorFinal)
-                throw new Exception("Valor inicial deve ser menor que o final.");
+                throw new PersonalException("Valor inicial deve ser menor que o final.");
 
             for(int i = valorInicial; i <= valorFinal; i++){
                 if(i % 2 == 0)
@@ -16,8 +17,11 @@ public class ex01 {
             }
             JOptionPane.showMessageDialog(null, "Números pares no intervalo informado: " + msg);
         }
-        catch(Exception e){
+        catch(PersonalException e){
             JOptionPane.showMessageDialog(null, e.getMessage());
+        } 
+        catch(Exception e){
+            JOptionPane.showMessageDialog(null, "Erro, algo não está correto");
         } 
     }
 }
