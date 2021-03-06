@@ -1,8 +1,9 @@
-package modelos;
+package dao;
 
 import java.util.ArrayList;
 import java.util.List;
-import dados.PessoaDepartamento;
+
+import models.PessoaDepartamento;
 
 public class PessoaDepartamentoDAO {
     

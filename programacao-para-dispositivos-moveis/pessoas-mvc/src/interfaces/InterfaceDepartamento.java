@@ -2,8 +2,9 @@ package interfaces;
 
 import java.util.List;
 import javax.swing.JOptionPane;
-import controles.ControleDepartamento;
-import dados.Departamento;
+
+import controllers.ControleDepartamento;
+import models.Departamento;
 
 public class InterfaceDepartamento
 {

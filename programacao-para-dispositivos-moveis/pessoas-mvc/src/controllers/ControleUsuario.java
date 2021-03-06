@@ -1,9 +1,9 @@
-package controles;
+package controllers;
 
 import java.util.List;
 
-import dados.Usuario;
-import modelos.UsuarioDAO;
+import dao.UsuarioDAO;
+import models.Usuario;
 
 public class ControleUsuario
 {

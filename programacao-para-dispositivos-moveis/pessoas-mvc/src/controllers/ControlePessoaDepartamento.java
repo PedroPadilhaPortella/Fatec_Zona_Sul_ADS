@@ -1,10 +1,11 @@
-package controles;
+package controllers;
 
 import java.util.List;
-import dados.Departamento;
-import dados.Pessoa;
-import dados.PessoaDepartamento;
-import modelos.PessoaDepartamentoDAO;
+
+import dao.PessoaDepartamentoDAO;
+import models.Departamento;
+import models.Pessoa;
+import models.PessoaDepartamento;
 
 public class ControlePessoaDepartamento {
     

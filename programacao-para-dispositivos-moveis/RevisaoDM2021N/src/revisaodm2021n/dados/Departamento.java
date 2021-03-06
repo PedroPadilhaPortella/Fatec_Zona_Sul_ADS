@@ -1,11 +1,20 @@
-package dados;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package revisaodm2021n.dados;
 
+/**
+ *
+ * @author User
+ */
 public class Departamento {
     
-    private int id;
-    private String nome;
-    private String descricao;
-    private String centrodecusto;
+    int id;
+    String nome;
+    String descricao;
+    String centrodecusto;
 
     public Departamento(int id) {
         this.id = id;
@@ -62,7 +71,7 @@ public class Departamento {
 
     @Override
     public String toString() {
-        return "Departamento { " + " id = " + id + ", nome = " + nome + ", descricao = " + descricao + ", centrodecusto = " + centrodecusto + " }";
+        return "Departamento{" + "id=" + id + ", nome=" + nome + ", descricao=" + descricao + ", centrodecusto=" + centrodecusto + '}';
     }
 
 }

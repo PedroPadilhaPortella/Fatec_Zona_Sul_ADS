@@ -1,13 +1,22 @@
-package dados;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package revisaodm2021n.dados;
 
+/**
+ *
+ * @author User
+ */
 public class Pessoa {
     
-    private int id;
-    private String nome;
-    private String idade;
-    private String genero;
-    private String peso;
-    private String altura;
+    int id;
+    String nome;
+    String idade;
+    String genero;
+    String peso;
+    String altura;
 
     public Pessoa(int id) {
         this.id = id;
@@ -84,8 +93,7 @@ public class Pessoa {
 
     @Override
     public String toString() {
-        return "Pessoa { " + " id = " + id + ", nome = " + nome + ", idade = " + idade + ", genero = " + genero + ", peso = " + peso
-        	+ ", altura = " + altura + " }";
+        return "Pessoa{" + "id=" + id + ", nome=" + nome + ", idade=" + idade + ", genero=" + genero + ", peso=" + peso + ", altura=" + altura + '}';
     }
     
     

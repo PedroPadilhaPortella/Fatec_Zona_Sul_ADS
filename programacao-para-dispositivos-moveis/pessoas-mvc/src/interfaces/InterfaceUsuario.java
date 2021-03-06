@@ -4,8 +4,8 @@ import java.util.List;
 
 import javax.swing.JOptionPane;
 
-import controles.ControleUsuario;
-import dados.Usuario;
+import controllers.ControleUsuario;
+import models.Usuario;
 
 public class InterfaceUsuario
 {
