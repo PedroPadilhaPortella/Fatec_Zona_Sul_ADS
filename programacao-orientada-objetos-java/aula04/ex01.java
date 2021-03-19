@@ -1,18 +1,20 @@
 import javax.swing.JOptionPane;
 
-public class ex01 {
+class ex01 {
+
+    public static int DobraInteiro(int value) {
+        int raio = value * 2;
+        return raio;
+    }
+
     public static void main(String[] args) {
-
         try {
-            double base = Integer.parseInt(JOptionPane.showInputDialog("Base do triângulo"));
-            double altura = Integer.parseInt(JOptionPane.showInputDialog("Altura do triângulo"));
-
-            Triangulo t = new Triangulo(base, altura);
-            double area = t.calcularArea();
-
-            JOptionPane.showMessageDialog(null, "Área do triângulo: " + area);
-        } catch(Exception e) {
-            JOptionPane.showMessageDialog(null, "Houve um erro, o valor enviado é inválido");
+            int num = Integer.parseInt(JOptionPane.showInputDialog("Digite um valor!"));
+            int dobro = DobraInteiro(num);
+            JOptionPane.showMessageDialog(null, "O dobro de " + num + " é igual a " + dobro);
+        }
+        catch(Exception e){
+            JOptionPane.showMessageDialog(null, e.getMessage());
         }
     }
 }
