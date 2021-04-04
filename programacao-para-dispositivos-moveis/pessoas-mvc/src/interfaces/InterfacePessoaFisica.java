@@ -1,5 +1,6 @@
 package interfaces;
 
+import java.sql.SQLException;
 import java.util.List;
 
 import javax.swing.JOptionPane;
@@ -17,7 +18,11 @@ public class InterfacePessoaFisica
     static String situacao;
     static String email;
     
-    static ControlePessoa controlePessoa = new ControlePessoa();
+    static ControlePessoa controlePessoa;
+    
+    public InterfacePessoaFisica() throws ClassNotFoundException, SQLException {
+    	controlePessoa = new ControlePessoa();
+    }
     
     public static void Inserir() {
         nome = JOptionPane.showInputDialog("NOME");

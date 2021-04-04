@@ -1,5 +1,6 @@
 package interfaces;
 
+import java.sql.SQLException;
 import java.util.List;
 import javax.swing.JOptionPane;
 
@@ -15,9 +16,14 @@ public class InterfacePessoa
     static String peso;
     static String altura;
     
-    static ControlePessoa controlePessoa = new ControlePessoa();
+    static ControlePessoa controlePessoa;
     
-    public static void Inserir() {
+    public InterfacePessoa() throws ClassNotFoundException, SQLException {
+    	controlePessoa = new ControlePessoa();
+    }
+    
+    
+    public static void Inserir() throws SQLException {
         nome = JOptionPane.showInputDialog("NOME");
         idade = JOptionPane.showInputDialog("IDADE"); 
         genero = JOptionPane.showInputDialog("GENERO");
@@ -28,7 +34,7 @@ public class InterfacePessoa
         JOptionPane.showMessageDialog(null,pSaida.toString());
     }
     
-    public static void Alterar() {
+    public static void Alterar() throws SQLException {
         id = Integer.parseInt(JOptionPane.showInputDialog("ID"));
         nome = JOptionPane.showInputDialog("NOME");
         idade = JOptionPane.showInputDialog("IDADE"); 
@@ -40,21 +46,21 @@ public class InterfacePessoa
         JOptionPane.showMessageDialog(null,pSaida.toString());
     }
 
-    public static void Listar() {
+    public static void Listar() throws SQLException {
         nome = JOptionPane.showInputDialog("NOME");
         Pessoa pEntrada = new Pessoa(nome);
         List<Pessoa> psSaida = controlePessoa.listar(pEntrada);
         JOptionPane.showMessageDialog(null,psSaida.get(1).toString());
     }
 
-    public static void Buscar() {
+    public static void Buscar() throws SQLException {
         id = Integer.parseInt(JOptionPane.showInputDialog("ID"));
         Pessoa pEntrada = new Pessoa(id);
-        Pessoa pSaida = controlePessoa.buscar(pEntrada);
+        Pessoa pSaida = controlePessoa.buscarPorId(pEntrada);
         JOptionPane.showMessageDialog(null,pSaida.toString());
     }
 
-    public static void Excluir() {
+    public static void Excluir() throws SQLException {
         id = Integer.parseInt(JOptionPane.showInputDialog("ID"));
         Pessoa pEntrada = new Pessoa(id);
         Pessoa pSaida = controlePessoa.excluir(pEntrada);

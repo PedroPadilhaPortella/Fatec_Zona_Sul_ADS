@@ -10,6 +10,7 @@ package revisaodm2021n.dados;
  * @author User
  */
 public class Usuario {
+    
     int id;
     String login;
     String senha;

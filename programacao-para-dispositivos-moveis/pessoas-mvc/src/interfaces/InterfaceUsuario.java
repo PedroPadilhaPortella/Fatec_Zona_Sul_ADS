@@ -1,5 +1,6 @@
 package interfaces;
 
+import java.sql.SQLException;
 import java.util.List;
 
 import javax.swing.JOptionPane;
@@ -15,9 +16,13 @@ public class InterfaceUsuario
     static String status;
     static String tipo;
     
-    static ControleUsuario controleUsuario = new ControleUsuario();
+    static ControleUsuario controleUsuario;
     
-    public static void Inserir()
+    public InterfaceUsuario() throws ClassNotFoundException, SQLException {
+    	controleUsuario = new ControleUsuario();
+    }
+    
+    public static void Inserir() throws SQLException
     {
         login = JOptionPane.showInputDialog("LOGIN");
         senha = JOptionPane.showInputDialog("SENHA"); 
@@ -28,7 +33,7 @@ public class InterfaceUsuario
         JOptionPane.showMessageDialog(null, dominio.toString());
     }
     
-    public static void Alterar()
+    public static void Alterar() throws SQLException
     {
         id = Integer.parseInt(JOptionPane.showInputDialog("ID"));
         login = JOptionPane.showInputDialog("LOGIN");
@@ -40,7 +45,7 @@ public class InterfaceUsuario
         JOptionPane.showMessageDialog(null, dominio.toString());
     }
 
-    public static void Listar()
+    public static void Listar() throws SQLException
     {
         login = JOptionPane.showInputDialog("LOGIN");
         Usuario data = new Usuario(login);
@@ -48,7 +53,7 @@ public class InterfaceUsuario
         JOptionPane.showMessageDialog(null, dominios.get(1).toString());
     }
 
-    public static void Buscar()
+    public static void Buscar() throws SQLException
     {
         id = Integer.parseInt(JOptionPane.showInputDialog("ID"));
         Usuario data = new Usuario(id);
@@ -56,7 +61,7 @@ public class InterfaceUsuario
         JOptionPane.showMessageDialog(null, dominio.toString());
     }
 
-    public static void Excluir()
+    public static void Excluir() throws SQLException
     {
         id = Integer.parseInt(JOptionPane.showInputDialog("ID"));
         Usuario data = new Usuario(id);

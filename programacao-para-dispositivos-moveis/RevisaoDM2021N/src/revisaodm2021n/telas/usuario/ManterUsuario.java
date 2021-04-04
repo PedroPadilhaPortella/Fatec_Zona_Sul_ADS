@@ -5,6 +5,7 @@
  */
 package revisaodm2021n.telas.usuario;
 
+import java.sql.SQLException;
 import java.util.List;
 import javax.swing.JOptionPane;
 import revisaodm2021n.controles.ControleUsuario;
@@ -22,47 +23,53 @@ public class ManterUsuario {
     static String status;
     static String tipo;
     
-    static ControleUsuario contUsu = new ControleUsuario();
+    static ControleUsuario contUsu;
     
-    public static void Inserir() {
+    public static void Inserir() throws SQLException, ClassNotFoundException {
         login = JOptionPane.showInputDialog("LOGIN");
         senha = JOptionPane.showInputDialog("SENHA"); 
         status = JOptionPane.showInputDialog("STATUS");
         tipo = JOptionPane.showInputDialog("TIPO");
         Usuario uEntrada = new Usuario(login,senha,status,tipo);
+        contUsu = new ControleUsuario();
         Usuario uSaida = contUsu.inserir(uEntrada);
         JOptionPane.showMessageDialog(null,uSaida.toString());
     }
     
-    public static void Alterar() {
+    public static void Alterar() throws SQLException, ClassNotFoundException {
         id = Integer.parseInt(JOptionPane.showInputDialog("ID"));
         login = JOptionPane.showInputDialog("LOGIN");
         senha = JOptionPane.showInputDialog("SENHA"); 
         status = JOptionPane.showInputDialog("STATUS");
         tipo = JOptionPane.showInputDialog("TIPO");
         Usuario uEntrada = new Usuario(id,login,senha,status,tipo);
+        contUsu = new ControleUsuario();
         Usuario uSaida = contUsu.alterar(uEntrada);
         JOptionPane.showMessageDialog(null,uSaida.toString());
     }
 
-    public static void Listar() {
+    public static void Listar() throws SQLException, ClassNotFoundException {
         login = JOptionPane.showInputDialog("LOGIN");
         Usuario uEntrada = new Usuario(login);
+        contUsu = new ControleUsuario();
         List<Usuario> usSaida = contUsu.listar(uEntrada);
-        JOptionPane.showMessageDialog(null,usSaida.get(0).toString());
-        
+        usSaida.forEach((usuL) -> {
+            JOptionPane.showMessageDialog(null,usuL.toString());
+        });
     }
 
-    public static void Buscar() {
+    public static void Buscar() throws SQLException, ClassNotFoundException {
         id = Integer.parseInt(JOptionPane.showInputDialog("ID"));
         Usuario uEntrada = new Usuario(id);
+        contUsu = new ControleUsuario();
         Usuario uSaida = contUsu.buscar(uEntrada);
         JOptionPane.showMessageDialog(null,uSaida.toString());
     }
 
-    public static void Excluir() {
+    public static void Excluir() throws SQLException, ClassNotFoundException {
         id = Integer.parseInt(JOptionPane.showInputDialog("ID"));
         Usuario uEntrada = new Usuario(id);
+        contUsu = new ControleUsuario();
         Usuario uSaida = contUsu.excluir(uEntrada);
         JOptionPane.showMessageDialog(null,uSaida.toString());
     }

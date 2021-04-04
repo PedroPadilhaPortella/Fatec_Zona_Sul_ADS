@@ -5,6 +5,7 @@
  */
 package revisaodm2021n.controles;
 
+import java.sql.SQLException;
 import java.util.List;
 import revisaodm2021n.dados.Usuario;
 import revisaodm2021n.modelos.DaoUsuario;
@@ -14,28 +15,31 @@ import revisaodm2021n.modelos.DaoUsuario;
  * @author User
  */
 public class ControleUsuario {
+
+    static DaoUsuario daoU;
     
-    static DaoUsuario daoUsu = new DaoUsuario();
- 
-
-    public Usuario inserir(Usuario uEntrada) {
-        return daoUsu.inserir(uEntrada);
+    public ControleUsuario() throws SQLException, ClassNotFoundException {
+        daoU = new DaoUsuario();
     }
 
-    public Usuario alterar(Usuario uEntrada) {
-        return daoUsu.alterar(uEntrada);
+    public Usuario inserir(Usuario uEntrada) throws SQLException {
+        return daoU.inserir(uEntrada);
     }
 
-    public List<Usuario> listar(Usuario uEntrada) {
-        return daoUsu.listar(uEntrada);
+    public List<Usuario> listar(Usuario uEntrada) throws SQLException {
+        return daoU.listar(uEntrada);
     }
 
-    public Usuario buscar(Usuario uEntrada) {
-        return daoUsu.buscar(uEntrada);
+    public Usuario alterar(Usuario uEntrada) throws SQLException {
+        return daoU.alterar(uEntrada);
     }
 
-    public Usuario excluir(Usuario uEntrada) {
-        return daoUsu.excluir(uEntrada);
+    public Usuario buscar(Usuario uEntrada) throws SQLException {
+        return daoU.buscar(uEntrada);
+    }
+
+    public Usuario excluir(Usuario uEntrada) throws SQLException {
+        return daoU.excluir(uEntrada);
     }
     
 }

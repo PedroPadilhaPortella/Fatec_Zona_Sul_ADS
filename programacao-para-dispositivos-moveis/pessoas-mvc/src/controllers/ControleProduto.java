@@ -2,9 +2,7 @@ package controllers;
 
 import java.util.List;
 
-import dao.DepartamentoDAO;
 import dao.ProdutoDAO;
-import models.Departamento;
 import models.Produto;
 
 public class ControleProduto {
