@@ -1,24 +1,17 @@
 package entities;
 
-public class Faturar {
+public class Faturar
+{
     private int numeroItem;
     private String descricao;
-    private int qtdComprada;
+    private int quantidade;
     private double valorItem;
 
-    public Faturar(int numeroItem, String descricao, int qtdComprada, double valorItem) {
+    public Faturar(int numeroItem, String descricao, int quantidade, double valorItem) {
         this.numeroItem = numeroItem;
         this.descricao = descricao;
-        if (qtdComprada > 0) {
-            this.qtdComprada = qtdComprada;
-        } else {
-            this.qtdComprada = 0;
-        }
-        if (valorItem > 0) {
-            this.valorItem = valorItem;
-        } else {
-            this.valorItem = 0;
-        }
+        this.quantidade = quantidade > 0? quantidade : 0;
+        this.valorItem = valorItem > 0? valorItem : 0;
     }
 
     public int getNumeroItem() {
@@ -37,12 +30,12 @@ public class Faturar {
         this.descricao = descricao;
     }
 
-    public int getQtdComprada() {
-        return this.qtdComprada;
+    public int getQuantidade() {
+        return this.quantidade;
     }
 
-    public void setQtdComprada(int qtdComprada) {
-        this.qtdComprada = qtdComprada;
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
     }
 
     public double getValorItem() {
@@ -54,6 +47,12 @@ public class Faturar {
     }
 
     public double getFaturarTotal() {
-        return this.qtdComprada * this.valorItem;
+        return this.quantidade * this.valorItem;
+    }
+
+    @Override
+    public String toString() {
+        return "Id: "+ numeroItem + ", Descrição: "+ descricao 
+        +", Valor: R$ "+ valorItem + ", Quantidade: " + quantidade;
     }
 }

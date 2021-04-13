@@ -1,19 +1,15 @@
 package entities;
 
-class Empregado {
-
+public class Empregado
+{
     private String nome;
     private String sobrenome;
     private double salmensal;
 
     public Empregado(String nome, String sobrenome, double salmensal) {
-        if (salmensal > 0) {
-            this.salmensal = salmensal;
-        } else {
-            this.salmensal = 0;
-        }
         this.nome = nome;
         this.sobrenome = sobrenome;
+        this.salmensal = salmensal > 0? salmensal : 0;
     }
 
     public String getNome() {
@@ -46,5 +42,10 @@ class Empregado {
 
     public void aumento(int porcentagem) {
         this.salmensal += (salmensal * porcentagem / 100);
+    }
+
+    @Override
+    public String toString() {
+        return this.nome + " " + this.sobrenome + ", Salario R$ " + this.salmensal;
     }
 }
