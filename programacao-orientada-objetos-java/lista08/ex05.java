@@ -1,4 +1,5 @@
 import javax.swing.JOptionPane;
+
 import entities.Cocker;
 
 public class ex05 {
@@ -10,6 +11,10 @@ public class ex05 {
             String cor = JOptionPane.showInputDialog(null, "Qual a cor do " + nome + "?");
             Cocker cocker = new Cocker(nome, raca, tipo, cor);
             System.out.println(cocker);
+            JOptionPane.showMessageDialog(null, cocker);
+            
+            boolean tosa = Boolean.parseBoolean(JOptionPane.showInputDialog(null, "Ele precisa de tosa? [true/false]"));
+            cocker.setTosa(tosa);
             JOptionPane.showMessageDialog(null, cocker);
             
         } catch (Exception e) {

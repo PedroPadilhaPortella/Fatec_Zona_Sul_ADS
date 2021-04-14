@@ -1,4 +1,5 @@
 import javax.swing.JOptionPane;
+
 import entities.Empregado;
 
 public class ex02 {

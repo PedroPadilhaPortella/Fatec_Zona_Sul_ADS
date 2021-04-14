@@ -1,5 +1,6 @@
-import entities.Faturar;
 import javax.swing.JOptionPane;
+
+import entities.Faturar;
 
 public class ex01 {
     public static void main(String[] args) {

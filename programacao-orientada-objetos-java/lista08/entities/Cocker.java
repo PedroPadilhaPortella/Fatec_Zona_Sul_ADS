@@ -16,4 +16,10 @@ public class Cocker extends Cachorro
     public void setTosa(boolean tosa) {
         this.tosa = tosa;
     }
+
+    @Override
+    public String toString() {
+        return this.nome + " é um Cachorro do tipo Animal, da raça Cocker e da cor " + 
+        this.cor  + " e ele precisa de tosa? " + this.tosa;
+    }
 }
