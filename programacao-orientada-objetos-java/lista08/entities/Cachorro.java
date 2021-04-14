@@ -5,7 +5,7 @@ public class Cachorro extends Animal
     public String nome;    
     public String raca;
 
-    public Cachorro(String nome, String raca, String tipo, String cor) {
+    Cachorro (String nome, String raca, String tipo, String cor) {
         super(tipo, cor);
         this.nome = nome;
         this.raca = raca;

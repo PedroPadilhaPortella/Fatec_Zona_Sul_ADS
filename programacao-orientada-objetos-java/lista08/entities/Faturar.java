@@ -7,7 +7,7 @@ public class Faturar
     private int quantidade;
     private double valorItem;
 
-    public Faturar(int numeroItem, String descricao, int quantidade, double valorItem) {
+    public Faturar (int numeroItem, String descricao, int quantidade, double valorItem) {
         this.numeroItem = numeroItem;
         this.descricao = descricao;
         this.quantidade = quantidade > 0? quantidade : 0;

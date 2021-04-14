@@ -5,7 +5,7 @@ public class Animal
     public String tipo;  
     public String cor;
 
-    public Animal(String tipo, String cor) {
+    Animal (String tipo, String cor) {
         this.tipo = tipo;
         this.cor = cor;
     }

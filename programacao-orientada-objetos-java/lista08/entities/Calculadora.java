@@ -8,7 +8,7 @@ public class Calculadora
     private String operador;
     private double resultado;    
 
-    public Calculadora(double valor1, double valor2, String operador) {
+    public Calculadora (double valor1, double valor2, String operador) {
         this.valor1 = valor1;
         this.valor2 = valor2;
         this.operador = operador;

@@ -1,17 +1,21 @@
 import javax.swing.JOptionPane;
 
-import entities.Cocker;
+import entities.EmpregadoPessoa;
 
 public class ex06 {
     public static void main(String[] args) {
         try {
-            String nome = JOptionPane.showInputDialog(null, "Qual o nome do Cachorro?");
-            String raca = JOptionPane.showInputDialog(null, "Qual a raca do " + nome + "?");
-            String tipo = JOptionPane.showInputDialog(null, "Qual o tipo do " + nome + "?");
-            String cor = JOptionPane.showInputDialog(null, "Qual a cor do " + nome + "?");
-            Cocker cocker = new Cocker(nome, raca, tipo, cor);
-            System.out.println(cocker);
-            JOptionPane.showMessageDialog(null, cocker);
+            String nome = JOptionPane.showInputDialog(null, "Nome: ");
+            int idade = Integer.parseInt(JOptionPane.showInputDialog(null, "Idade: "));
+            double altura = Double.parseDouble(JOptionPane.showInputDialog(null, "Altura: "));
+            String sexo = JOptionPane.showInputDialog(null, "Sexo: ");
+            double salario = Integer.parseInt(JOptionPane.showInputDialog(null, "Salario: R$ "));
+
+            EmpregadoPessoa empregado = new EmpregadoPessoa(nome, idade, altura, sexo, salario);
+
+            System.out.println(empregado);
+            JOptionPane.showMessageDialog(null, empregado);
+            
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Erro, verifique a entrada dos dados.");
         }

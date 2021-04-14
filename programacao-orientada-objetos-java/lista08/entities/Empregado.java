@@ -6,7 +6,7 @@ public class Empregado
     private String sobrenome;
     private double salmensal;
 
-    public Empregado(String nome, String sobrenome, double salmensal) {
+    public Empregado (String nome, String sobrenome, double salmensal) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.salmensal = salmensal > 0? salmensal : 0;
