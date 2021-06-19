@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\Users\\pepz\\Downloads\\app-fatec-library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_list_livros_param.xml",
+        "source": "C:\\Users\\pepz\\Downloads\\app-fatec-library\\app\\src\\main\\res\\layout\\activity_list_livros_param.xml"
+    },
+    {
+        "merged": "C:\\Users\\pepz\\Downloads\\app-fatec-library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_list_livros.xml",
+        "source": "C:\\Users\\pepz\\Downloads\\app-fatec-library\\app\\src\\main\\res\\layout\\activity_list_livros.xml"
+    },
+    {
+        "merged": "C:\\Users\\pepz\\Downloads\\app-fatec-library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_upt_usu.xml",
+        "source": "C:\\Users\\pepz\\Downloads\\app-fatec-library\\app\\src\\main\\res\\layout\\activity_upt_usu.xml"
+    },
+    {
+        "merged": "C:\\Users\\pepz\\Downloads\\app-fatec-library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_add_usu.xml",
+        "source": "C:\\Users\\pepz\\Downloads\\app-fatec-library\\app\\src\\main\\res\\layout\\activity_add_usu.xml"
+    },
+    {
+        "merged": "C:\\Users\\pepz\\Downloads\\app-fatec-library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_list_usu_param.xml",
+        "source": "C:\\Users\\pepz\\Downloads\\app-fatec-library\\app\\src\\main\\res\\layout\\activity_list_usu_param.xml"
+    },
+    {
+        "merged": "C:\\Users\\pepz\\Downloads\\app-fatec-library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_add_livros.xml",
+        "source": "C:\\Users\\pepz\\Downloads\\app-fatec-library\\app\\src\\main\\res\\layout\\activity_add_livros.xml"
+    },
+    {
+        "merged": "C:\\Users\\pepz\\Downloads\\app-fatec-library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
+        "source": "C:\\Users\\pepz\\Downloads\\app-fatec-library\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\pepz\\Downloads\\app-fatec-library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_upt_livros.xml",
+        "source": "C:\\Users\\pepz\\Downloads\\app-fatec-library\\app\\src\\main\\res\\layout\\activity_upt_livros.xml"
+    },
+    {
+        "merged": "C:\\Users\\pepz\\Downloads\\app-fatec-library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_list_usu.xml",
+        "source": "C:\\Users\\pepz\\Downloads\\app-fatec-library\\app\\src\\main\\res\\layout\\activity_list_usu.xml"
+    },
+    {
+        "merged": "C:\\Users\\pepz\\Downloads\\app-fatec-library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_menu.xml",
+        "source": "C:\\Users\\pepz\\Downloads\\app-fatec-library\\app\\src\\main\\res\\layout\\activity_menu.xml"
+    }
+]
