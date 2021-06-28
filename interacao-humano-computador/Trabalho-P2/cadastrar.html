@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>OlderService</title>
+</head>
+
+<body style="background-color: whitesmoke;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Older Services</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastrar.html">Cadastrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Sobre Nós</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container rounded-circle mt-5" style="width: 700px; background-color: white;">
+        <h1 class="mb-5">Cadastro de Usuários</h1>
+        <form class="row g-3">
+            <div class="col-md-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Seu Nome...">
+            </div>
+            <div class="col-md-3">
+                <label for="nome" class="form-label">Sobrenome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Seu Sobrenome...">
+            </div>
+            <div class="col-md-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="senha">
+            </div>
+            <div class="col-md-3">
+                <label for="senha" class="form-label">Confirme a sua Senha</label>
+                <input type="password" class="form-control" id="senha">
+            </div>
+
+            <div class="col-8">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="... seuNome@email.com ...">
+            </div>
+            <div class="col-4">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="tel" class="form-control" id="telefone" placeholder="55 11 99999-9999 ... ">
+            </div>
+
+            <div class="col-md-5">
+                <label for="endereco" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="endereco" placeholder="Rua Fulano de Tal...">
+            </div>
+            <div class="col-md-1">
+                <label for="numero" class="form-label">Número</label>
+                <input type="number" class="form-control" id="numero">
+            </div>
+            <div class="col-md-3">
+                <label for="cidade" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="cidade">
+            </div>
+            <div class="col-md-1">
+                <label for="estados" class="form-label">Estado</label>
+                <select name="estados" id="estados" class="form-select">
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MT">MT</option>
+                    <option value="MS">MS</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="cep" class="form-label">CEP</label>
+                <input type="text" class="form-control" id="cep">
+            </div>
+            <div class="buttons">
+                <a href="index.html" class="btn btn-success">Increver</a>
+                    <a href="index.html" class="btn btn-danger">Cancelar</a>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
