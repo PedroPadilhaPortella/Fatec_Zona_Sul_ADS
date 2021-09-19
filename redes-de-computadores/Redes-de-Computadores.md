@@ -154,3 +154,31 @@ Para testar a conectividade com os switches e computadores, use o comando ping n
 4. Aplicação	Representa dados para o usuário, além do controle de codificação e de diálogo.
 
 ![Modelo OSI e TCP/IP](https://www.dltec.com.br/blog/wp-content/uploads/2019/02/osi-tcp-ip.png)
+
+
+### Terminologia de largura de banda
+Os termos usados para medir a qualidade da largura de banda incluem:
+
+#### Latência
+
+O termo latência se refere ao tempo necessário para os dados viajarem de um ponto a outro, incluindo atrasos.
+Em uma internetwork ou em uma rede com vários segmentos, a taxa de transferência não pode ser mais rápida que o link mais lento no caminho da origem ao destino. Mesmo que todos ou a maioria dos segmentos tenham alta largura de banda, será necessário apenas um segmento no caminho com baixa taxa de transferência para criar um gargalo na taxa de transferência de toda a rede.
+
+#### Taxa de transferência
+
+Taxa de transferência é a medida da transferência de bits através da mídia durante um determinado período.
+Devido a alguns fatores, geralmente a taxa de transferência não corresponde à largura de banda especificada nas implementações da camada física. A taxa de transferência geralmente é menor que a largura de banda. Existem muitos fatores que influenciam a taxa de transferência:
+ A quantidade de tráfego;
+* O tipo de tráfego;
+* A latência criada pelo número de dispositivos de rede encontrados entre a origem e o destino.
+* Existem muitos testes de velocidade on-line que podem revelar a taxa de transferência de uma conexão com a Internet. A figura fornece exemplos de resultados de um teste de velocidade.
+
+#### Dados úteis
+
+Há uma terceira medida para avaliar a transferência de dados utilizáveis; é conhecido como goodput. Goodput é a medida de dados usáveis transferidos em um determinado período. Goodput é a taxa de transferência menos a sobrecarga de tráfego para estabelecer sessões, reconhecimentos, encapsulamento e bits retransmitidos. O goodput é sempre menor que a taxa de transferência, que geralmente é menor do que a largura de banda.
+
+## Tipos de Redes Físicas
+
+> Cabeamento de Cobre  
+> Fibra Óptica  
+> Sem Fio  
