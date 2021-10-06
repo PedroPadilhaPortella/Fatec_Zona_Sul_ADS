@@ -116,14 +116,14 @@ insert into cd_categoria (id, menorPreco, maiorPreco) values
     (9, 22, 44),
     (10, 9, 18);
     
-insert into cd (id, gravadoraId, nome, precoVenda, dataLancamento, cdIndicado) values
-(1, 1, 'Mais do Mesmo', -5.00, '1985-02-03', 1),
-(2, 3, 'Bate Boca', -15.00, '1999-08-07', 2),
-(3, 4, 'Elis Regina-Essa Mulher', -18.00, '1986-05-25', 3),
-(4, 3, 'A forca que nunca seca', 5.25, '1981-07-15', 4),
-(5, 4, 'Perfil', 20.99, '1987-01-02', 5),
-(6, 2, 'Barry Mandam Greastest Hits', 25.00, '1958-12-18', 1),
-(7, 5, 'Listen Without Prejudice', 28.00, '1975-06-11', 7);
+insert into cd (id, gravadoraId, nome, precoVenda, dataLancamento, cdIndicado, cdCategoriaId) values
+(1, 1, 'Mais do Mesmo', -5.00, '1985-02-03', 1, 10),
+(2, 3, 'Bate Boca', -15.00, '1999-08-07', 2, 10),
+(3, 4, 'Elis Regina-Essa Mulher', -18.00, '1986-05-25', 3, 10),
+(4, 3, 'A forca que nunca seca', 5.25, '1981-07-15', 4, 10),
+(5, 4, 'Perfil', 20.99, '1987-01-02', 5, 2),
+(6, 2, 'Barry Mandam Greastest Hits', 25.00, '1958-12-18', 1, 2),
+(7, 5, 'Listen Without Prejudice', 28.00, '1975-06-11', 7, 2);
 
 insert into faixa (cdId, musicaId, numeroFaixa) values 
 	(1,1,1),

@@ -20,5 +20,3 @@ select left(nome, 11) from autor;
 select nome from musica;
 select substring(nome, 2, 4) from musica;
 select substring(nome, -5) from musica;
-
--- data e hora

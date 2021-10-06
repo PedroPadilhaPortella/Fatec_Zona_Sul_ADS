@@ -1,5 +1,5 @@
-select count(*) as cds, gravadoraId from cd group by gravadoraId;
 -- Quantas músicas tem cada cd?
+select count(*) as cds, gravadoraId from cd group by gravadoraId;
 
 -- Qual a média de preço dos cd´s por gravadora?
 select avg(precoVenda) as preco, gravadoraId from cd group by gravadoraId;

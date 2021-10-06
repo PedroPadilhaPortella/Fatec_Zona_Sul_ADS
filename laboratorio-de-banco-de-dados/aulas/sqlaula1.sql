@@ -55,11 +55,11 @@ create table faixa (
     foreign key(musicaId) references musica(id)
 );
 
-create table item_cd (
-	cdId integer not null,
-    musicaId integer not null,
-    numeroFaixa integer not null,
-    foreign key(cdId) references cd(id),
-    foreign key(musicaId) references musica(id),
-    foreign key(numeroFaixa) references faixa(id)
-);
+-- create table item_cd (
+-- 	cdId integer not null,
+--     musicaId integer not null,
+--     numeroFaixa integer not null,
+--     foreign key(cdId) references cd(id),
+--     foreign key(musicaId) references musica(id),
+--     foreign key(numeroFaixa) references faixa(id)
+-- );
